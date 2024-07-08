@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Collection of Apostasy">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Wan Ili Afiqah Binti Wan Norazmi">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <title>Doubt Journey</title>
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <img src="./image/LOGO.png" alt="Doubt Journey" class="logo">
+        <ul class="nav-links">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="commonlaw.html">Common Law</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li class="ctn"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <img src="./image/MENU BUTTON.png" alt="" class="menu-btn">
+    </nav>
+
+    <header>
+        <div class="header-content" id="home">
+            <h2>Welcome to Apostasy Archives</h2>
+            <div class="line"></div>
+            <h1>Uncover the Stories of Divergence and Discovery</h1>
+            <a target="_blank" href="https://www.youtube.com/watch?v=-lQeP2BEONc" class="ctn">Watch Now</a>
+        </div>
+    </header>
+
+    <!-- == About Us == -->
+    <section class="about" id="about">
+        <div class="title">
+            <h1>Get to know us!</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./image/ili afiqah.png" alt="">
+                <h4>Wan Ili Afiqah Bt Wan Norazmi</h4>
+                <p>"Embrace the Journey of Faith: Live by Islam's Teachings, Find Peace in Submission, Strength in Community, and Purpose in Worship. Believing in Islam, Living with Purpose."</p>
+                <a href="iliafiqah.html"class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./image/siti norfatihah.png" alt="">
+                <h4>Siti Norfatihah Bt Mohd Noor</h4>
+                <p>"Rooted in Faith: Live a Life of Compassion, Integrity, and Purpose. Believing in Islam Means Embracing Peace, Justice, and the Infinite Wisdom of the Almighty in Every Step of Life."</p>
+                <a href="fatihah.html"class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>UiTM Puncak Perdana, 40150 Shah Alam, Selangor | Phone: 011-60823633 | Email: iliafieqah34@gmail.com</p>
+        <p>Copyright © 2024 Ili & Fatihah. All rights reserved</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

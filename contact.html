@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- ==== CSS ==== -->
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background-color: transparent; /* Initially transparent */
+            padding: 10px 0;
+            box-shadow: none; /* No shadow initially */
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .navbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 20px;
+            color: rgb(131, 23, 23);
+        }
+        .navbar .logo {
+            max-width: 200x;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav-links li.active a {
+            color: rgb(247, 4, 4);
+            text-decoration: underline;
+        }
+        .nav-links li a:hover {
+            color: rgb(247, 4, 4);
+        }
+        .menu-btn {
+            display: none;
+            cursor: pointer;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(36, 2, 2);
+            width: 100%;
+        }
+        .footer p {
+            color: white;
+        }
+        .contact-section {
+            position: relative;
+            text-align: center;
+            background-image: url('image/banner contact.jpg'); /* Path to your background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Text color to contrast with the background */
+            height: 100vh; /* Full viewport height */
+            padding-top: 80px; /* Adjust if necessary to account for the header */
+        }
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.699); /* Dark overlay */
+            z-index: 1;
+        }
+        .contact-section h1, .contact-section p, .contact-section .contact-info, .contact-section form {
+            position: relative;
+            z-index: 2;
+        }
+        .contact-section h1 {
+            text-align: center;
+            margin-bottom: 100px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .contact-section p {
+            margin-bottom: 2em;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 2em;
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+        }
+        .contact-item {
+            max-width: 200px;
+            margin: 0 20px; /* Added margin for better spacing */
+            color: #fff;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 80%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            padding: 0.5em 2em;
+            background: rgb(247, 4, 4);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            }
+            .nav-links.mobile-menu {
+                display: flex;
+            }
+            .menu-btn {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./image/LOGO.png" alt="Doubt Journey" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="commonlaw.html">Common Law</a></li>
+                <li><a href="archive.html">Archive</a></li>
+                <li class="active"><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <img src="./image/MENU BUTTON.png" alt="" class="menu-btn">
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>Contact us for support, inquiries, feedback, or assistance. We're here to help!</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h2>Address</h2>
+                    <p>UiTM Puncak Perdana,<br>
+                        40150 Shah Alam,<br>
+                    Selangor</p>
+                </div>
+                <div class="contact-item">
+                    <h2>Phone</h2>
+                    <p>011-60823633</p>
+                </div>
+                <div class="contact-item">
+                    <h2>E-mail</h2>
+                    <p>iliafieqah34@gmail.com</p>
+                </div>
+            </div>
+    
+            <form class="contact-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="E-mail Id" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-links');
+        const header = document.querySelector('header');
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu');
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+                header.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.backgroundColor = 'transparent';
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

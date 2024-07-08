@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ili Afiqah</title>
+
+    <!-- ==== CSS ==== -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .navbar .logo {
+            max-width: 150px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links li.active a {
+            color: rgb(247, 4, 4);
+        }
+
+        .menu-btn {
+            display: none;
+            cursor: pointer;
+        }
+
+        .footer {
+            width: 100%;
+            min-height: 100px;
+            padding: 20px 80px;
+            margin: 0;
+            background: rgb(36, 2, 2);
+            text-align: center;
+        }
+        .footer p {
+            color: white;
+            margin: 20px auto;
+            padding: 20px auto;
+        }
+
+        section#home {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 10%;
+            background-color: #f7f7f7;
+            margin-top: 80px;
+            position: relative;
+        }
+
+        .intro {
+            max-width: 50%;
+        }
+
+        .intro h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .intro h1 span {
+            color: #97192a;
+        }
+
+        .intro p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .intro-image {
+            width: 45%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .intro-image img.shape {
+            width: 90%;
+            height: auto;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .intro-image img.ili {
+            width: 61%;
+            height: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            }
+
+            .nav-links.mobile-menu {
+                display: flex;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .intro {
+                max-width: 100%;
+            }
+
+            .intro-image {
+                display: none;
+            }
+        }
+        /* Animations */
+        img {
+                transition: transform .3s ease;
+            }           
+            img:hover {
+                transform: scale(1.1);
+            }
+            .ctn:hover {
+                background: whitesmoke;
+                color: rgb(73, 4, 4);
+                box-shadow: 2px 2px 5px #00000052;
+            }
+            li:hover {
+                color: rgb(73, 4, 4);
+                cursor: zoom-out;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./image/logo black.png" alt="Doubt Journey" class="logo">
+            <ul class="nav-links">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="commonlaw.html">Common Law</a></li>
+                <li><a href="archive.html">Archive</a></li>
+                <li><a href="contact.html">Contact Us</a></li>  
+            </ul>
+            <img src="./image/MENU BUTTON.png" alt="Menu Button" class="menu-btn">
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="home">
+            <div class="intro">
+                <h1>I'm <span>Ili Afiqah</span></h1>
+                <p>Hello, My name is Wan Ili Afiqah Binti Wan Norazmi and 
+                    <br> My number matrix is 2023898826.
+                </p>
+            </div>
+            <div class="intro-image">
+                <img src="image/shape.png" class="shape" alt="Background Shape">
+                <img src="image/ili afiqah 2.png" class="ili" alt="Ili Afiqah">
+            </div>
+        </section>
+    </main>
+
+    <section class="footer">
+        <p>UiTM Puncak Perdana, 40150 Shah Alam, Selangor | Phone: 011-60823633 | Email: iliafieqah34@gmail.com</p>
+        <p>Copyright © 2024 Ili & Fatihah. All rights reserved</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive</title>
+
+    <!-- ==== CSS ==== -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .navbar .logo {
+            max-width: 150px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links li a {
+            color: rgb(49, 4, 27);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav-links li.active a {
+            color: rgb(247, 4, 4);
+            text-decoration: underline;
+        }
+        .nav-links li a:hover{
+            color: rgb(247, 4, 4);
+        }
+        .menu-btn {
+            display: none;
+            cursor: pointer;
+        }
+        .footer {
+            width: 100%;
+            min-height: 100px;
+            padding: 20px 80px;
+            margin: 0;
+            background: rgb(36, 2, 2);
+            text-align: center;
+        }
+        .footer p {
+            color: white;
+            margin: 20px auto;
+            padding: 20px auto;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .news-section {
+            width: 85%;
+            margin: 20px auto;
+        }
+        .news-section .title {
+            text-align: center;
+            margin: auto;
+        }
+        .news-section .title h2 {
+            font-size: 40px;
+            color: rgb(138, 5, 5);
+            text-transform: uppercase;
+            margin-top: 50px;
+        }
+        .news-section .title p {
+            font-size: 19px;
+            color: black;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            margin: 25px auto;
+        }
+        .cards .card {
+            background: #f4f4f4;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: left;
+        }
+        .image-section img {
+            width: 100%;
+            height: auto;
+        }
+        .content {
+            padding: 15px 0;
+            text-align: left;
+        }
+        .content h4 {
+            font-size: 15px;
+            color: rgb(36, 2, 2);
+            font-weight: 500;
+            margin-bottom: 10px;
+            text-transform: bold;
+        }
+        .content p {
+            color: black;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+        .content a {
+            text-decoration: none;
+            color: white;
+            background-color: red;
+            padding: 8px 15px;
+            display: inline-block;
+            margin-top: 5px; /* Add margin for spacing between buttons */
+        }
+        
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+            .nav-links.mobile-menu {
+                display: flex;
+            }
+            .menu-btn {
+                display: block;
+            }
+        }
+
+        /* Animations */
+            img {
+                transition: transform .3s ease;
+            }           
+            img:hover {
+                transform: scale(1.1);
+            }
+            .ctn:hover {
+                background: whitesmoke;
+                color: rgb(73, 4, 4);
+                box-shadow: 2px 2px 5px #00000052;
+            }
+            li:hover {
+                color: rgb(73, 4, 4);
+                cursor: zoom-out;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./image/logo black.png" alt="Doubt Journey" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="commonlaw.html">Common Law</a></li>
+                <li class="active"><a href="archive.html">Archive</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <img src="./image/MENU BUTTON.png" alt="" class="menu-btn">
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main style="margin-top: 100px;">
+        <div class="container">
+            <div class="news-section">
+                <div class="title">    
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="image-section">
+                            <img src="image/archive 1.png" alt="archive 1">
+                        </div>
+                        <div class="content">
+                            <h4>Adakah Golongan Murtad Boleh Dikenakan Hukuman Bunuh Di Malaysia?</h4>
+                            <p> • Archive success: YES
+                               <br> • Duration: 35 seconds
+                               <br> • File size: 8140276 bytes
+                               <br> • File archived: 114 files</p>
+                            <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/Adakah%20Golongan%20Murtad%20Boleh%20Dikenakan%20Hukuman%20Bunuh%20Di%20Malaysia_/malaysiabersuara.com/artikel/semak-fakta/adakah-golongan-murtad-boleh-dikenakan-hukuman-bunuh-di-malaysia/index.html" class="ctn">Read More</a>
+                            <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240525130621/https://malaysiabersuara.com/artikel/semak-fakta/adakah-golongan-murtad-boleh-dikenakan-hukuman-bunuh-di-malaysia/" class="ctn">WARC</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image-section">
+                            <img src="image/archive 2.png" alt="archive 2">
+                        </div>
+                        <div class="content">
+                            <h4>AL-AFKAR #119: TAKLIK KELUAR DARI AGAMA ISLAM</h4>
+                            <p> • Archive success: YES
+                                <br> • Duration: 18 seconds
+                                <br> • File size: 2737741 bytes
+                                <br> • File archived: 62 files</p>
+                            <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/AL-AFKAR%20%23119_%20TAKLIK%20KELUAR%20DARI%20AGAMA%20ISLAM/www.muftiwp.gov.my/ms/artikel/al-afkar/4984-al-afkar-119-taklik-keluar-dari-agama-islam.html" class="ctn">Read More</a>
+                            <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240526040116/https://www.muftiwp.gov.my/ms/artikel/al-afkar/4984-al-afkar-119-taklik-keluar-dari-agama-islam" class="ctn">WARC</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image-section">
+                            <img src="image/archive 3.png" alt="archive 3">
+                        </div>
+                        <div class="content">
+                            <h4>Banyak Warga Langkat Murtad, Diduga Ini yang Jadi Penyebabnya</h4>
+                            <p> • Archive success: YES
+                                <br> • Duration: 1 minutes 54 seconds
+                                <br> • File size: 41426206 bytes
+                                <br> • File archived: 344 files</p>
+                            <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/Banyak%20Warga%20Langkat%20Murtad,%20Diduga%20Ini%20yang%20Jadi%20Penyebabnya/www.tvonenews.com/berita/nasional/40747-banyak-warga-langkat-murtad-diduga-ini-yang-jadi-penyebabnya.html" class="ctn">Read More</a>
+                            <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240525141909/https://www.tvonenews.com/berita/nasional/40747-banyak-warga-langkat-murtad-diduga-ini-yang-jadi-penyebabnya" class="ctn">WARC</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image-section">
+                            <img src="image/archive 4.png" alt="archive 4">
+                        </div>
+                        <div class="content">
+                            <h4>Faktor dan Cabaran Pertukaran Agama dalam Kalangan Masyarakat Melayu-Islam di Malaysia</h4>
+                            <p> • Archive success: YES
+                                <br> • Duration: 6 seconds
+                                <br> • File size: 1773931 bytes
+                                <br> • File archived: 22 files</p>
+                            <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/Faktor%20dan%20Cabaran%20Pertukaran%20Agama%20dalam%20Kalangan%20Masyarakat%20Melayu-Islam%20di%20Malaysia/sainshumanika.utm.my/index.php/sainshumanika/article/view/182.html" class="ctn">Read More</a>
+                            <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240525154146/https://sainshumanika.utm.my/index.php/sainshumanika/article/view/182" class="ctn">WARC</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image-section">
+                        <img src="image/archive 5.png" alt="archive 5">
+                    </div>
+                    <div class="content">
+                        <h4>IRSYAD AL-FATWA KE-26: PUNCA MURTAD</h4>
+                        <p> • Archive success: YES
+                            <br> • Duration: 17 seconds
+                            <br> • File size: 2369798 bytes
+                            <br> • File archived: 58 files</p>
+                        <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/Irsyad%20Al-Fatwa%20Ke-26_%20Punca%20Murtad/muftiwp.gov.my/ms/artikel/irsyad-hukum/umum/2065-26.html" class="ctn">Read More</a>
+                        <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240526024654/https://muftiwp.gov.my/ms/artikel/irsyad-hukum/umum/2065-26" class="ctn">WARC</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 6.png" alt="archive 6">
+                </div>
+                <div class="content">
+                    <h4>Isu murtad: Kes dalam perhatian dan tindakan polis - Jakim</h4>
+                    <p> • Archive success: YES
+                        <br> • Duration: 2 seconds 47 seconds
+                        <br> • File size: 5043746 bytes
+                        <br> • File archived: 155 files</p>
+                    <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/Isu%20murtad%20Kes%20dalam%20perhatian%20dan%20tindakan%20polis%20%E2%80%93%20Jakim/www.kosmo.com.my/2021/02/20/isu-murtad-kes-dalam-perhatian-dan-tindakan-polis-jakim/index.html" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240525140414/https://www.kosmo.com.my/2021/02/20/isu-murtad-kes-dalam-perhatian-dan-tindakan-polis-jakim/" class="ctn">WARC</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 7.png" alt="archive 7">
+                </div>
+                <div class="content">
+                    <h4>KELUAR AGAMA ISLAM DI MALAYSIA: PERMASALAHAN DARI SUDUT UNDANG-UNDANG</h4>
+                    <p> • Archive success: YES
+                        <br> • Duration: 2 minutes 4 seconds
+                        <br> • File size: 31016960 bytes
+                        <br> • File archived: 207 files</p>
+                    <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/KELUAR%20AGAMA%20ISLAM%20DI%20MALAYSIA_%20PERMASALAHAN%20DARI%20SUDUT%20UNDANG-UNDANG/jice.um.edu.my/index.php/JSLR/article/view/4266.html" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240526091348/https://jice.um.edu.my/index.php/JSLR/article/view/4266" class="ctn">WARC</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 10.png" alt="archive 10">
+                </div>
+                <div class="content">
+                    <h4>Liberal mana yang Hadi hukum kafir murtad?</h4>
+                    <p> • Archive success: YES
+                        <br> • Duration: 15 seconds
+                        <br> • File size: 1779141 bytes
+                        <br> • File archived: 50 files</p>
+                    <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/Liberal%20mana%20yang%20Hadi%20hukum%20kafir%20murtad_/harapandaily.com/2024/02/29/liberal-mana-yang-hadi-hukum-kafir-murtad/index.html" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240526090000/https://harapandaily.com/2024/02/29/liberal-mana-yang-hadi-hukum-kafir-murtad/" class="ctn">WARC</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 12.png" alt="archive 12">
+                </div>
+                <div class="content">
+                    <h4>Murtad: Jenayah terlarang tetapi sah?</h4>
+                    <p> • Archive success: YES
+                        <br> • Duration: 54 seconds
+                        <br> • File size: 1492716 bytes 
+                        <br> • File archived: 55 files</p>
+                    <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/Murtad_%20Jenayah%20terlarang%20tetapi%20sah_/www.malaysiakini.com/news/414764.html" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240525083551/https://www.malaysiakini.com/news/414764" class="ctn">WARC</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 13.png" alt="archive 13">
+                </div>
+                <div class="content">
+                    <h4>Pendedahan ilmu fardu ain sejak kecil benteng cegah murtad</h4>
+                    <p> • Archive success: YES
+                        <br> • Duration: 11 seconds
+                        <br> • File size: 5070886 bytes 
+                        <br> • File archived: 47 files</p>
+                    <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/Pendedahan%20ilmu%20fardu%20ain%20sejak%20kecil%20benteng%20cegah%20murtad/www.indahnyaislam.my/pendedahan-ilmu-fardu-ain-sejak-kecil-benteng-cegah-murtad/index.html" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240526044651/https://www.indahnyaislam.my/pendedahan-ilmu-fardu-ain-sejak-kecil-benteng-cegah-murtad/" class="ctn">WARC</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 15.png" alt="archive 15">
+                </div>
+                <div class="content">
+                    <h4>REMAJA MURTAD-SALAH SIAPA?</h4>
+                    <p> • Archive success: YES
+                        <br> • Duration: 3 minutes 24 seconds
+                        <br> • File size: 50732213 bytes 
+                        <br> • File archived: 83 files</p>
+                    <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/Remaja%20Murtad-Salah%20Siapa_/cahayakeimanan-ainjannah.blogspot.com/2011/07/remaja-murtad-salah-siapa.html" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240526055308/https://cahayakeimanan-ainjannah.blogspot.com/2011/07/remaja-murtad-salah-siapa.html" class="ctn">WARC</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 24.png" alt="archive 24">
+                </div>
+                <div class="content">
+                    <h4>Setelah Murtad Dari Islam Asmirandah dan Suami Jatuh Miskin</h4>
+                    <p> • Archive success: YES
+                        <br> • Duration: 3 seconds
+                        <br> • File size: 299942 bytes 
+                        <br> • File archived: 6 files</p>
+                    <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/Remaja%20Murtad-Salah%20Siapa_/cahayakeimanan-ainjannah.blogspot.com/2011/07/remaja-murtad-salah-siapa.html" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240526025435/https://www.blogammar.com/setelah-murtad-dari-islam-asmirandah-dan-suami-jatuh-miskin/" class="ctn">WARC</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 26.png" alt="archive 26">
+                </div>
+                <div class="content">
+                    <h4>Hanya ulul amri dapat tentukan status murtad atau sebaliknya</h4>
+                    <p> • Archive success: YES
+                        <br> • Duration: 41 seconds
+                        <br> • File size: 10550996 bytes 
+                        <br> • File archived: 110 files</p>
+                    <a target="_blank" href=file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/Hanya%20ulul%20amri%20dapat%20tentukan%20status%20murtad%20atau%20sebaliknya/www.sinarharian.com.my/article/117126/khas/wacana/hanya-ulul-amri-dapat-tentukan-status-murtad-atau-sebaliknya.html" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240525132733/https://www.sinarharian.com.my/article/117126/khas/wacana/hanya-ulul-amri-dapat-tentukan-status-murtad-atau-sebaliknya#google_vignette" class="ctn">WARC</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 23.png" alt="archive 23">
+                </div>
+                <div class="content">
+                    <h4>FATWA MENGENAI ORANG ISLAM YANG CUBA KELUAR DARI AGAMA ISLAM (MURTAD) DI MALAYSIA AMNYA DAN NEGERI KELANTAN KHASNYA</h4>
+                    <p> • Archive success: INCOMPLETE
+                        <br> • Duration: 11 seconds
+                        <br> • File size: 1254846 bytes 
+                        <br> • File archived: 32 files</p>
+                    <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/FATWA%20MENGENAI%20ORANG%20ISLAM%20YANG%20CUBA%20KELUAR%20DARI%20AGAMA%20ISLAM%20(MURTAD)%20DI%20MALAYSIA%20AMNYA%20DAN%20NEGERI%20KELANTAN%20KHASNYA/mufti.kelantan.gov.my/index.php/component/content/article/fatwa-mengenai-orang-islam-yang-cuba" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240526035423/https://mufti.kelantan.gov.my/index.php/component/content/article/fatwa-mengenai-orang-islam-yang-cuba-keluar-dari-agama-islam-murtad-di-malaysia-amnya-dan-negeri-kelantan-khasnya?catid=10&Itemid=101" class="ctn">WARC</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 11.png" alt="archive 11">
+                </div>
+                <div class="content">
+                    <h4>Murtad Maksud, Ciri-Ciri Pelaku, Punca, dan Hukumnya</h4>
+                    <p> • Archive success: INCOMPLETE
+                        <br> • Duration: 7 seconds
+                        <br> • File size: 747151 bytes
+                        <br> • File archived: 23 files</p>
+                    <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/Murtad%20Maksud,%20Ciri-Ciri%20Pelaku,%20Punca,%20dan%20Hukumnya/taqwa.my/murtad-maksud/index.html" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240526082436/https://taqwa.my/murtad-maksud/" class="ctn">WARC</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/news.png" alt="archive 14">
+                </div>
+                <div class="content">
+                    <h4>Pengaruh Rakan Sebaya Penyebab Murtad di Selangor</h4>
+                    <p> • Archive success: INCOMPLETE
+                        <br> • Duration: 32 seconds
+                        <br> • File size: 2192948 bytes 
+                        <br> • File archived: 67 files</p>
+                    <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/Pengaruh%20Rakan%20Sebaya%20Penyebab%20Murtad%20di%20Selangor/www.mstar.com.my/lokal/semasa/2010/01/31/pengaruh-rakan-sebaya-penyebab-murtad-di-selangor.html" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240525045742/https://www.mstar.com.my/lokal/semasa/2010/01/31/pengaruh-rakan-sebaya-penyebab-murtad-di-selangor" class="ctn">WARC</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 17.png" alt="archive 17">
+                </div>
+                <div class="content">
+                    <h4>What Happens When Muslims In Malaysia Try To Leave Islam?</h4>
+                    <p> • Archive success: INCOMPLETE
+                        <br> • Duration: 1 minutes 5 seconds
+                        <br> • File size: 9701927 bytes 
+                        <br> • File archived: 150 files</p>
+                    <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/What%20Happens%20When%20Muslims%20In%20Malaysia%20Try%20To%20Leave%20Islam_/jefrinazri.medium.com/what-happens-when-muslims-in-malaysia-try-to-leave-islam-339389970791.html" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240525072416/https://jefrinazri.medium.com/what-happens-when-muslims-in-malaysia-try-to-leave-islam-339389970791" class="ctn">WARC</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/news 3.png" alt="archive 18">
+                </div>
+                <div class="content">
+                    <h4>Murtad virus paling bahaya</h4>
+                    <p> • Archive success: INCOMPLETE
+                        <br> • Duration: 42 seconds
+                        <br> • File size: 10561980 bytes 
+                        <br> • File archived: 110 files</p>
+                    <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/UNSUCCESSFUL/Murtad%20virus%20paling%20bahaya/www.sinarharian.com.my/article/78220/suara-sinar/analisis-sinar/murtad-virus-paling-bahaya.html" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240525134237/https://www.sinarharian.com.my/article/78220/suara-sinar/analisis-sinar/murtad-virus-paling-bahaya#google_vignette" class="ctn">WARC</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 19.png" alt="archive 19">
+                </div>
+                <div class="content">
+                    <h4>Ramai Kristian Melayu Rahsiakan Identiti Mereka</h4>
+                    <p> • Archive success: INCOMPLETE
+                        <br> • Duration: 28 seconds
+                        <br> • File size: 4893231 bytes 
+                        <br> • File archived: 49 files</p>
+                    <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/Ramai%20Kristian%20Melayu%20Rahsiakan%20Identiti%20Mereka/akarimomar.wordpress.com/2016/06/23/ramai-kristian-melayu-rahsiakan-identiti-mereka/index.html" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240526030140/https://akarimomar.wordpress.com/2016/06/23/ramai-kristian-melayu-rahsiakan-identiti-mereka/" class="ctn">WARC</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 9.png" alt="archive 9">
+                </div>
+                <div class="content">
+                    <h4>Kurang kasih sayang antara punca murtad di Malaysia</h4>
+                    <p> • Archive success: INCOMPLETE
+                        <br> • Duration: 35 seconds
+                        <br> • File size: 4767565 bytes
+                        <br> • File archived: 35 files</p>
+                    <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/Kurang%20kasih%20sayang%20antara%20punca%20murtad%20di%20Malaysia/www.hmetro.com.my/mutakhir/2023/03/948792/kurang-kasih-sayang-antara-punca-murtad-di-malaysia.html" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240525074352/https://www.hmetro.com.my/mutakhir/2023/03/948792/kurang-kasih-sayang-antara-punca-murtad-di-malaysia" class="ctn">WARC</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 8.png" alt="archive 8">
+                </div>
+                <div class="content">
+                    <h4>Kes Murtad di Malaysia: Jenayah Yang Makin Membarah?</h4>
+                    <p> • Archive success: INCOMPLETE
+                        <br> • Duration: 1 minutes 18 seconds
+                        <br> • File size: 5706446 bytes
+                        <br> • File archived: 154 files</p>
+                    <a target="_blank" href="file:///C:/Users/HP/Documents/DEGREE/ICM561/CASE%20STUDY/SUCCESS/Kes%20Murtad%20di%20Malaysia_%20Jenayah%20yang%20makin%20membarah_/ikram.org.my/kes-murtad-di-malaysia-jenayah-yang-makin-membarah/index.html" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240525080454/https://ikram.org.my/kes-murtad-di-malaysia-jenayah-yang-makin-membarah/" class="ctn">WARC</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 25.png" alt="archive 25">
+                </div>
+                <div class="content">
+                    <h4>Isu murtad perlu ditentukan Mahkamah Syariah, bukan Mahkamah Sivil – Mufti Pahang</h4>
+                    <p> • Archive success: INCOMPLETE
+                        <br> • Duration: 2 seconds
+                        <br> • File size: 0 bytes
+                        <br> • File archived: 0 files</p>
+                    <a target="_blank" href="#" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240525153259/https://themerdekatimes.com/news/2024/01/isu-murtad-perlu-ditentukan-mahkamah-syariah-bukan-mahkamah-sivil-mufti-pahang/" class="ctn">WARC</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/1.png" alt="archive 19">
+                </div>
+                <div class="content">
+                    <h4>Mahkamah sivil tiada bidang kuasa semak isu murtad</h4>
+                    <p> • Archive success: NO
+                        <br> • Duration: NIL
+                        <br> • File size: NIL
+                        <br> • File archived: NIL</p>
+                    <a target="_blank" href="#" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240525081812/https://www.bharian.com.my/berita/kes/2022/07/975687/mahkamah-sivil-tiada-bidang-kuasa-semak-isu-murtad" class="ctn">WARC</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 20.png" alt="archive 20">
+                </div>
+                <div class="content">
+                    <h4>Murtad: JAKIM beri tumpuan usaha perkukuhkan akidah, pegangan umat Islam</h4>
+                    <p> • Archive success: NO
+                        <br> • Duration: NIL
+                        <br> • File size: NIL
+                        <br> • File archived: NIL</p>
+                    <a target="_blank" href="#" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240525090035/https://www.bharian.com.my/berita/nasional/2023/03/1080665/murtad-jakim-beri-tumpuan-usaha-perkukuhkan-akidah-pegangan-umat?gad_source=1&gclid=CjwKCAjwrcKxBhBMEiwAIVF8rBuEqb2nzL5OgK1cazSyvosqH7oXDAV1XUTc1D8nTi8XmQmJrRy3VxoC4-kQAvD_BwE" class="ctn">WARC</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="image-section">
+                    <img src="image/archive 21.png" alt="archive 21">
+                </div>
+                <div class="content">
+                    <h4>Adakah Jatuh Murtad Dengan Gurauan 'Aku Bukan Islam'</h4>
+                    <p> • Archive success: NO
+                        <br> • Duration: NIL
+                        <br> • File size: NIL
+                        <br> • File archived: NIL</p>
+                    <a target="_blank" href="#" class="ctn">Read More</a>
+                    <a target="_blank" href="https://conifer.rhizome.org/iliAfiqah02/collection-of-apostasy/20240526075957/https://tzkrh.com/202027319/" class="ctn">WARC</a>
+                </div>
+            </div>
+
+        
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <section class="footer">
+        <p>UiTM Puncak Perdana, 40150 Shah Alam, Selangor | Phone: 011-60823633 | Email: iliafieqah34@gmail.com</p>
+        <p>Copyright © 2024 Ili & Fatihah. All rights reserved</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navlinks = document.querySelector('.nav-links');
+
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu');
+        });
+    </script>
+</body>
+</html>
